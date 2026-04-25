@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quench Media | Premium Production Kenya</title>
+    <style>
+        :root {
+            --primary: #1e90ff;
+            --bg: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text: #ffffff;
+        }
+
+        body { 
+            margin:0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            line-height: 1.6;
+        }
+
+        header { 
+            background: rgba(17, 17, 17, 0.95); 
+            padding: 25px 20px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1 { margin: 0; color: var(--primary); letter-spacing: 2px; font-size: 2rem; }
+        
+        nav { margin-top: 15px; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--primary); }
+
+        .hero { 
+            padding: 80px 20px; 
+            text-align: center; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492691523567-6170c24e5fb4?q=80&w=2070') center/cover;
+        }
+
+        .section { padding: 60px 20px; max-width: 1100px; margin: auto; text-align: center; }
+
+        .btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+
+        .btn { 
+            background: var(--primary); 
+            color: white; 
+            padding: 14px 28px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-alt { background: transparent; border: 2px solid var(--primary); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4); }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; 
+            margin-top: 30px; 
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 15px; 
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: var(--primary); }
+        .card h3 { color: var(--primary); margin-top: 0; }
+        .price { font-size: 1.4rem; font-weight: bold; display: block; margin: 10px 0; }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer { background: #111; padding: 40px 20px; text-align: center; border-top: 1px solid #222; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.5rem; }
+            .section { padding: 40px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>QUENCH MEDIA</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Professional Media Production</h2>
+  <p>Based in Kenya. We Create. You Go Viral.</p>
+  <div class="btn-group">
+    <a href="https://wa.me/254796357261" class="btn">WhatsApp Us</a>
+    <a href="tel:+254796357261" class="btn btn-alt">Call Now</a>
+  </div>
+</div>
+
+<div id="services" class="section">
+  <h2>Our Packages</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Wedding Video</h3>
+      <span class="price">KES 60,000</span>
+      <p>Full Setup + Cinematic Drone Coverage</p>
+    </div>
+    <div class="card">
+      <h3>Wedding (Classic)</h3>
+      <span class="price">KES 50,000</span>
+      <p>Multi-camera coverage (4 Cameras)</p>
+    </div>
+    <div class="card">
+      <h3>Music Video</h3>
+      <span class="price">KES 14,999</span>
+      <p>Professional 4K Direction & Editing</p>
+    </div>
+    <div class="card">
+      <h3>Visualizers</h3>
+      <span class="price">KES 4,999</span>
+      <p>Social Media & YouTube ready</p>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" class="section">
+  <h2>Our Work</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&user=QUENCHMUSIC-wk1zh" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div id="contact" class="section">
+  <h2>Ready to start your project?</h2>
+  <p>Available for events and shoots across Kenya.</p>
+  <a href="https://wa.me/254796357261" class="btn">Get a Quote on WhatsApp</a>
+</div>
+
+<footer>
+  <p>&copy; 2026 Quench Media. Quality production you can trust.</p>
+</footer>
+
+</body>
+</html>
